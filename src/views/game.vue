@@ -3,7 +3,6 @@ import { ref, onMounted } from 'vue'
 import BlockGame from '../components/BlockGame-x2.vue'
 import 'animate.css'
 
-// 导入多张背景图（假设命名为 bg1.jpg … bg10.jpg）
 import bg1 from '../assets/image/bg1.jpg'
 import bg2 from '../assets/image/bg2.jpg'
 import bg3 from '../assets/image/bg3.jpg'
@@ -17,7 +16,6 @@ const backgrounds = [bg1, bg2, bg3, bg4, bg5, bg6, bg7, bg8,]
 const bgUrl = ref<string>('')
 
 onMounted(() => {
-  // 随机选一张背景
   bgUrl.value = backgrounds[
     Math.floor(Math.random() * backgrounds.length)
   ]
