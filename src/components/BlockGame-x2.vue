@@ -271,7 +271,7 @@ onMounted(initGame)
 
 .block {
   position: absolute;
-  border-radius: 0;
+  border-radius: 10px;
   cursor: pointer;
   aspect-ratio: 1 / 1;
   display: flex;
@@ -332,7 +332,7 @@ onMounted(initGame)
 }
 
 .top-buttons button {
-  margin: 8px;
+  margin: 10px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
