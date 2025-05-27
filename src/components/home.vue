@@ -54,7 +54,10 @@ const closeRules = () => showRules.value = false
 }
 
 .container {
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  align-items: center;
   padding: 2rem;
   background: #ffffff80;
   backdrop-filter: blur(10px);
@@ -69,8 +72,10 @@ h1 {
 }
 
 .btn {
+  width: 50vw;
   margin: 0.5rem;
   padding: 0.75rem 1.5rem;
+  align-content: center;
   font-size: 1rem;
   border: none;
   border-radius: 4px;
